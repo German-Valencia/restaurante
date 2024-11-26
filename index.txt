@@ -72,6 +72,23 @@ amazing & delicious
 Where every flavor
 tells a story
 
+Tradicional y Higiene
+
+Por el amor a la comida deliciosa
+
+Ven con la familia y siente la alegría de la comida deliciosa
+
+Ver Nuestro Menú
+
+Experiencia encantadora
+
+Sabores Inspirados por las Estaciones
+
+Asombroso y delicioso
+
+Donde cada sabor cuenta una historia
+
+
 aria-label = slide to previous
 <ion-icon name="chevron-back"></ion-icon>
 
