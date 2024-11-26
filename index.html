@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GulaGula - Sabor y Arte</title>
+    <meta name="title" content="GulaGula - Sabor y Arte" />
+    <meta name="description" content=""Descubre una experiencia culinaria única
+    en GulaGula, donde el sabor y el arte se encuentran."">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+  <body>
+    <div class="preload" data-preload>
+      <div class="circle"></div>
+      <p class="text">GulaGula</p>
+    </div>
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">
+            Santiago de Cali - Valle del Cauca - Colombia
+          </span>
+        </address>
+        <div class="separator"></div>
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">Diariamente : 8:00 am a 10:00 pm</span>
+        </div>
+
+        <a href="tel:+571234567890" class="topbar-item">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">+57 123 456 7890</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:gulagula@restaurant.com" class="topbar-item">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">gulagula@restaurant.com</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo1.png"
+            width="160"
+            height="50"
+            alt="GulaGula Inicio"
+          />
+        </a>
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo1.png"
+              width="160"
+              height="50"
+              alt="GulaGula Inicio"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+                <span class="span">Inicio</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Menú</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Nosotros</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Nuestra Chef</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Contacto</span>
+              </a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visítanos</p>
+            <address class="body-4">
+              Cali, Valle del Cauca, <br />
+              Colombia
+            </address>
+            <p class="body-4 navbar-text">Atención: 8.00 am - 10.00pm</p>
+            <a href="mailto:gulagula@restaurant.com" class="body-4 sidebar-link"
+              >gulagula@restaurant.com</a
+            >
+            <div class="separator"></div>
+            <p class="contact-label">Reservas</p>
+            <a
+              href="tel:+57123123456"
+              class="body-1 contact-number hover-underline"
+              >+57-123-123456</a
+            >
+          </div>
+        </nav>
+
+        <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Mesas</span>
+          <span class="text text-2" aria-hidden="true">Mesas</span>
+        </a>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slioder>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt="cover"
+                  class="img-cover"
+                />
+              </div>
+              p.label-2.section-
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <!-- ***************************************************************** -->
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
