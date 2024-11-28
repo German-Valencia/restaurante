@@ -107,3 +107,43 @@ addEventOnElements(
 );
 
 window.addEventListener("load", autoSlide);
+
+/* const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+window.addEventListener("mousemove", (event) => {
+  x = (event.clientX / window.innerWidth) * 10 - 5;
+  y = (event.clientY / window.innerHeight) * 10 - 5;
+
+  x = x - x * 2;
+  y = y - y * 2;
+
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+}); */
+
+
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x = 0, y = 0;
+
+window.addEventListener("mousemove", (event) => {
+  const mouseX = (event.clientX / window.innerWidth) * 10 - 5;
+  const mouseY = (event.clientY / window.innerHeight) * 10 - 5;
+
+  x = -mouseX;
+  y = -mouseY;
+
+  window.requestAnimationFrame(() => {
+    parallaxItems.forEach(item => {
+      const speed = Number(item.dataset.parallaxSpeed);
+      const translateX = x * speed;
+      const translateY = y * speed;
+      item.style.transform = `translate3d(${translateX}px, ${translateY}px, 0px)`;
+    });
+  });
+});
