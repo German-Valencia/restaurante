@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GulaGula - Sabor y Arte</title>
     <meta name="title" content="GulaGula - Sabor y Arte" />
-    <meta name="description" content=""Descubre una experiencia culinaria única
-    en GulaGula, donde el sabor y el arte se encuentran."">
+    <meta name="description" content="Descubre una experiencia culinaria única
+    en GulaGula, donde el sabor y el arte se encuentran.">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
     <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
   </head>
-  <body>
+  <body id="top">
     <div class="preload" data-preload>
       <div class="circle"></div>
       <p class="text">GulaGula</p>
@@ -45,7 +45,7 @@
           <span class="span">Diariamente : 8:00 am a 10:00 pm</span>
         </div>
 
-        <a href="tel:+571234567890" class="topbar-item">
+        <a href="tel:+571234567890" class="topbar-item link">
           <div class="icon">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -54,7 +54,7 @@
 
         <div class="separator"></div>
 
-        <a href="mailto:gulagula@restaurant.com" class="topbar-item">
+        <a href="mailto:gulagula@restaurant.com" class="topbar-item link">
           <div class="icon">
             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -73,6 +73,7 @@
             alt="GulaGula Inicio"
           />
         </a>
+        
         <nav class="navbar" data-navbar>
           <button class="close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -109,14 +110,14 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
+              <a href="#eve" class="navbar-link hover-underline">
                 <div class="separator"></div>
-                <span class="span">Nuestra Chef</span>
+                <span class="span">Eventos</span>
               </a>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
+              <a href="#contact" class="navbar-link hover-underline">
                 <div class="separator"></div>
                 <span class="span">Contacto</span>
               </a>
@@ -142,9 +143,9 @@
           </div>
         </nav>
 
-        <a href="#" class="btn btn-secondary">
-          <span class="text text-1">Mesas</span>
-          <span class="text text-2" aria-hidden="true">Mesas</span>
+        <a href="#res" class="btn btn-secondary">
+          <span class="text text-1">reservar</span>
+          <span class="text text-2" aria-hidden="true">mesa</span>
         </a>
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="line line-1"></span>
@@ -399,11 +400,15 @@
               </h2>
 
               <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printingand typesetting
-                industry lorem Ipsum has been the industrys standard dummy text
-                ever since the when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book It has survived not
-                only five centuries, but also the leap into.
+                Desde su apertura, nuestro restaurante ha sido un faro de
+                excelencia culinaria en el corazón de Cali. Fundado por la
+                renombrada chef Carolina Ruiz, hemos combinado tradición y
+                modernidad para ofrecer una experiencia gastronómica
+                inigualable. Cada plato es una obra maestra, elaborada con
+                ingredientes frescos y técnicas innovadoras. Nuestro compromiso
+                con la calidad y el servicio ha hecho de nosotros un destino
+                preferido para los amantes de la alta cocina. Ven y descubre por
+                qué somos el secreto mejor guardado de la ciudad.
               </p>
 
               <div class="contact-label">Reservas</div>
@@ -420,6 +425,7 @@
             </div>
 
             <figure class="about-banner">
+              <!-- ojo -->
               <img
                 src="./assets/images/about-banner.jpg"
                 width="570"
@@ -453,15 +459,15 @@
                   alt="about banner"
                 />
               </div>
-              <img
-                src="./assets/images/shape-3.png"
-                width="197"
-                height="194"
-                loading="lazy"
-                alt="about banner"
-                class="shape"
-              />
             </figure>
+            <img
+              src="./assets/images/shape-3.png"
+              width="197"
+              height="194"
+              loading="lazy"
+              alt="about banner"
+              class="shape"
+            />
           </div>
         </section>
 
@@ -766,7 +772,7 @@
           <div class="container">
             <div class="quote">”</div>
 
-            <p class="headline-2 testi text">
+            <p class="headline-2 testi-text">
               Quería agradecerte por invitarme a esa cena increíble la otra
               noche. La comida fue extraordinaria.
             </p>
@@ -789,15 +795,16 @@
           </div>
         </section>
 
-        <section class="reservation">
+        <section class="reservation" id="res">
           <div class="container">
             <div class="form reservation-form bg-black-10">
               <form action="" class="form-left">
                 <h2 class="headline-1 text-center">Reserva en Linea</h2>
                 <p class="form-text text-center">
                   Solicitud de Reserva
-                  <a href="tel:+88123123456" class="link">+88-123-123456</a> o
-                  llene el formulario
+                  <a href="tel:+88123123456" class="link">+88-123-123456</a>
+                  <br />
+                  o llene el formulario
                 </p>
                 <div class="input-wrapper">
                   <input
@@ -875,6 +882,7 @@
                 </div>
 
                 <textarea
+                  class="input-field"
                   name="message"
                   placeholder="Mensaje"
                   autocomplete="off"
@@ -892,23 +900,373 @@
                 class="form-right text-center"
                 style="background-image: url(./assets/images/form-pattern.png)"
               >
-                <h2 class="headline- text-center">Contáctanos</h2>
+                <h2 class="headline-1 text-center">Contáctanos</h2>
 
-                <p class="contact-label">Solicitud de Reserva</p>
+                <p class="contact-label">Reservas</p>
                 <a
                   href="tel:+88123123456"
                   class="body-1 contact-number hover-underline"
                   >+88-123-123456</a
                 >
-                <div class="separator">
-                  <p class="contact-label">Ubicación</p>
-                </div>
+                <div class="separator"></div>
+                <p class="contact-label">Ubicación</p>
+                <address class="body-4">
+                  Santiago de Cali - Valle del Cauca <br />
+                  Colombia
+                </address>
+                <p class="contact-label">Horario Almuerzo</p>
+                <p class="body-4">
+                  Lunes a Domingo <br />
+                  11:00am - 2:30pm
+                </p>
+                <p class="contact-label">Horario Cena</p>
+                <p class="body-4">
+                  Lunes a Domingo <br />
+                  05:00pm - 10:00pm
+                </p>
               </div>
             </div>
           </div>
         </section>
+
+        <section
+          class="section features text-center"
+          aria-label="características"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Por qué elegirnos</p>
+            <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icono"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Alimentos Saludables</h3>
+                  <p class="label-1 card-text">
+                    Seleccionamos ingredientes frescos y de la más alta calidad
+                    para garantizar que cada plato sea una experiencia culinaria
+                    excepcional.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icono"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Ambiente Sofisticado</h3>
+                  <p class="label-1 card-text">
+                    Cuidadosamente diseñado para proporcionar una experiencia
+                    elegante y acogedora, donde cada detalle ha sido pensado
+                    para tu máximo confort y disfrute.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icono"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Chefs Expertos</h3>
+                  <p class="label-1 card-text">
+                    Seleccionados por su habilidad y experiencia, garantizando
+                    que cada plato sea una obra maestra culinaria.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icono"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Eventos & Fiestas</h3>
+                  <p class="label-1 card-text">
+                    Es el lugar perfecto, ofrecemos un ambiente elegante y un
+                    servicio excepcional que hará que tu celebración sea
+                    inolvidable.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-7.png"
+              width="208"
+              height="178"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1"
+            />
+            <img
+              src="./assets/images/shape-8.png"
+              width="120"
+              height="115"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </div>
+        </section>
+
+        <section class="section event bg-black-10" aria-label="evento" id="eve">
+          <div class="container">
+            <p class="section-subtitle label-2 text-center">
+              Actualizaciones Recientes
+            </p>
+            <h2 class="section-title headline-1 text-center">
+              Próximos Eventos
+            </h2>
+            <ul class="grid-list">
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-2.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Sabor tan irresistible que querrás devorarlo con la mirada."
+                      class="img-cover"
+                    />
+                    <time datetime="2024/11/28" class="publish-date label-2"
+                      >28/11/2024</time
+                    >
+                  </div>
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Sabor Mexicano
+                    </p>
+                    <h3 class="card-title title-2 text-center">
+                      Sabor tan irresistible que querrás devorarlo con la
+                      mirada.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-1.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Cena Navideña"
+                      class="img-cover"
+                    />
+                    <time datetime="2024/12/24" class="publish-date label-2"
+                      >24/12/2024</time
+                    >
+                  </div>
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Expectacular Banquete
+                    </p>
+                    <h3 class="card-title title-2 text-center">
+                      Cena Navideña.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-3.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Cena Fin de año"
+                      class="img-cover"
+                    />
+                    <time datetime="2024/12/24" class="publish-date label-2"
+                      >31/12/2024</time
+                    >
+                  </div>
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Lo mejor para despedir el año
+                    </p>
+                    <h3 class="card-title title-2 text-center">
+                      Cena Fin de Año.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Nuestro Blog</span>
+              <span class="text text-2" aria-hidden="true">Nuestro Blog</span>
+            </a>
+          </div>
+        </section>
       </article>
     </main>
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url(./assets/images/footer-bg.jpg)"
+    >
+      <div class="container" id="contact">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo1.png"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="gulagula inicio"
+              />
+            </a>
+            <address class="body-4">Santiago de Cali, Valle, Colombia</address>
+            <a href="mailto:reservas@gulagula.com" class="body-4 contact-link"
+              >reservas@gulagula.com</a
+            >
+            <a href="tel:+88123123456" class="body-4 contact-link"
+              >Reservas: +88-123-123456</a
+            >
+            <p class="body-4">Abierto : 09:00 am - 11:00 pm</p>
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+            <p class="title-1">Noticias & Promociones</p>
+            <p class="label-1">
+              Suscríbete y obtén <span class="span">25% Descuento</span>
+            </p>
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Suscribirse</span>
+                <span class="text text-2" aria-hidden="true">Suscribirse</span>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Inicio</a>
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Menú</a>
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Chefs</a>
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Google Map</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 GulaGula. All Rights Reserved
+            <a
+              href="https://antsoftdesign.vercel.app/"
+              target="_blank"
+              class="link"
+              >Made with ❤️ by ANT</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="ir a inicio"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
     <!-- ***************************************************************** -->
     <script src="./assets/js/script.js"></script>

@@ -7,15 +7,21 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-const addEventOnElements = (elements, eventType, callback) => {
+/* const addEventOnElements = (elements, eventType, callback) => {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
 };
 
+
+
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+
+const navLinks = document.querySelectorAll(".navbar-link");
+
+
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
@@ -25,7 +31,27 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+addEventOnElements(navLinks, "click", toggleNavbar); */
+
+const addEventOnElements = (elements, eventType, callback) => {
+  elements.forEach((element) => element.addEventListener(eventType, callback));
+};
+
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+const navLinks = document.querySelectorAll(".navbar-link");
+
+const toggleNavbar = () => {
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("nav-active");
+};
+
+addEventOnElements([...navTogglers, ...navLinks], "click", toggleNavbar);
+
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 let lastScrollPos = 0;
 
@@ -42,9 +68,11 @@ const hideHeader = function () {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
+    backTopBtn.classList.add("active");
     hideHeader();
   } else {
     header.classList.remove("active");
+    backTopBtn.classList.remove("active");
   }
 });
 
@@ -126,10 +154,10 @@ window.addEventListener("mousemove", (event) => {
   }
 }); */
 
-
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
-let x = 0, y = 0;
+let x = 0,
+  y = 0;
 
 window.addEventListener("mousemove", (event) => {
   const mouseX = (event.clientX / window.innerWidth) * 10 - 5;
@@ -139,7 +167,7 @@ window.addEventListener("mousemove", (event) => {
   y = -mouseY;
 
   window.requestAnimationFrame(() => {
-    parallaxItems.forEach(item => {
+    parallaxItems.forEach((item) => {
       const speed = Number(item.dataset.parallaxSpeed);
       const translateX = x * speed;
       const translateY = y * speed;
