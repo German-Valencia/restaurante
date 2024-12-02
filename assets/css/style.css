@@ -1813,7 +1813,7 @@ textarea.input-field {
 
 @media (min-width: 992px) {
   :root {
-    --section-space: 100px
+    --section-space: 100px;
   }
 
   :is(.service, .event) .container {
@@ -1831,9 +1831,10 @@ textarea.input-field {
 
   .topbar-item:not(.link) {
     display: flex;
+
   }
 
-  .topbar-item-2 {
+  .topbar .item-2 {
     margin-inline-end: auto;
   }
 
