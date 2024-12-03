@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+  <!-- <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GulaGula - Sabor y Arte</title>
     <meta name="title" content="GulaGula - Sabor y Arte" />
-    <meta name="description" content="Descubre una experiencia culinaria única
-    en GulaGula, donde el sabor y el arte se encuentran.">
+    <meta
+      name="description"
+      content="Descubre una experiencia culinaria única
+    en GulaGula, donde el sabor y el arte se encuentran."
+    />
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +23,60 @@
     <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
     <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
     <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head> -->
+  <head>
+    <!-- Meta Tags Básicos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título y Descripción -->
+    <title>GulaGula - Sabor y Arte</title>
+    <meta name="title" content="GulaGula - Sabor y Arte" />
+    <meta
+      name="description"
+      content="Descubre una experiencia culinaria única en GulaGula, donde el sabor y el arte se encuentran."
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- Preconexión a Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hojas de Estilo -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Preload de Imágenes -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+
+    <!-- Meta Tags para Redes Sociales -->
+    <meta property="og:title" content="GulaGula - Sabor y Arte" />
+    <meta
+      property="og:description"
+      content="Descubre una experiencia culinaria única en GulaGula, donde el sabor y el arte se encuentran."
+    />
+    <meta property="og:image" content="./assets/images/hero-slider-1.jpg" />
+    <meta property="og:url" content="https://gulagula.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
+
   <body id="top">
-    <div class="preload" data-preload>
+    <div class="preload" data-preload data-preload aria-hidden="true">
       <div class="circle"></div>
       <p class="text">GulaGula</p>
     </div>
 
-    <div class="topbar">
+    <!--   <div class="topbar">
       <div class="container">
         <address class="topbar-item">
           <div class="icon">
@@ -61,9 +110,49 @@
           <span class="span">gulagula@restaurant.com</span>
         </a>
       </div>
+    </div> -->
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span"
+            >Santiago de Cali - Valle del Cauca - Colombia</span
+          >
+        </address>
+        <div class="separator"></div>
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">Diariamente : 8:00 am a 10:00 pm</span>
+        </div>
+        <a
+          href="tel:+571234567890"
+          class="topbar-item link"
+          title="Llamar a GulaGula"
+        >
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">+57 123 456 7890</span>
+        </a>
+        <div class="separator"></div>
+        <a
+          href="mailto:gulagula@restaurant.com"
+          class="topbar-item link"
+          title="Enviar correo a GulaGula"
+        >
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">gulagula@restaurant.com</span>
+        </a>
+      </div>
     </div>
 
-    <header class="header" data-header>
+    <!-- <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo">
           <img
@@ -73,7 +162,7 @@
             alt="GulaGula Inicio"
           />
         </a>
-        
+
         <nav class="navbar" data-navbar>
           <button class="close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -154,11 +243,119 @@
         </button>
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
+    </header> -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo1.png"
+            width="160"
+            height="50"
+            alt="GulaGula Inicio"
+          />
+        </a>
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo1.png"
+              width="160"
+              height="50"
+              alt="GulaGula Inicio"
+            />
+          </a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a
+                href="#home"
+                class="navbar-link hover-underline active"
+                title="Inicio"
+              >
+                <div class="separator"></div>
+                <span class="span">Inicio</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline" title="Menú">
+                <div class="separator"></div>
+                <span class="span">Menú</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="#about"
+                class="navbar-link hover-underline"
+                title="Nosotros"
+              >
+                <div class="separator"></div>
+                <span class="span">Nosotros</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="#eve"
+                class="navbar-link hover-underline"
+                title="Eventos"
+              >
+                <div class="separator"></div>
+                <span class="span">Eventos</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="#contact"
+                class="navbar-link hover-underline"
+                title="Contacto"
+              >
+                <div class="separator"></div>
+                <span class="span">Contacto</span>
+              </a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visítanos</p>
+            <address class="body-4">
+              Cali, Valle del Cauca, <br />
+              Colombia
+            </address>
+            <p class="body-4 navbar-text">Atención: 8.00 am - 10.00pm</p>
+            <a
+              href="mailto:gulagula@restaurant.com"
+              class="body-4 sidebar-link"
+              title="Enviar correo a GulaGula"
+            >
+              gulagula@restaurant.com
+            </a>
+            <div class="separator"></div>
+            <p class="contact-label">Reservas</p>
+            <a
+              href="tel:+57123123456"
+              class="body-1 contact-number hover-underline"
+              title="Llamar a GulaGula"
+            >
+              +57-123-123456
+            </a>
+          </div>
+        </nav>
+        <a href="#res" class="btn btn-secondary">
+          <span class="text text-1">reservar</span>
+          <span class="text text-2" aria-hidden="true">mesa</span>
+        </a>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
     </header>
 
     <main>
       <article>
-        <section class="hero text-center" aria-label="home" id="home">
+
+       <!--  <section class="hero text-center" aria-label="home" id="home">
           <ul class="hero-slider" data-hero-slioder>
             <li class="slider-item active" data-hero-slider-item>
               <div class="slider-bg">
@@ -264,9 +461,59 @@
             />
             <span class="label-2 text-center span"> Reservar Mesa </span>
           </a>
-        </section>
-
-        <section
+        </section> -->
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+              <li class="slider-item active" data-hero-slider-item>
+                  <div class="slider-bg">
+                      <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="cover" class="img-cover" />
+                  </div>
+                  <p class="label-2 section-subtitle slider-reveal">Tradición y Calidad</p>
+                  <h1 class="display-1 hero-title slider-reveal">Por amor a la <br /> Comida Deliciosa</h1>
+                  <p class="body-2 hero-text slider-reveal">Ven en familia y disfruta de nuestras delicias</p>
+                  <a href="#" class="btn btn-primary slider-reveal" title="Ver Nuestro Menú">
+                      <span class="text text-1">Nuestro Menú</span>
+                      <span class="text text-2" aria-hidden="true">Nuestro Menú</span>
+                  </a>
+              </li>
+              <li class="slider-item" data-hero-slider-item>
+                  <div class="slider-bg">
+                      <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="cover" class="img-cover" />
+                  </div>
+                  <p class="label-2 section-subtitle slider-reveal">Experiencia exquisita</p>
+                  <h1 class="display-1 hero-title slider-reveal">Sabores Inspirados por<br /> nuestras Tradiciones</h1>
+                  <p class="body-2 hero-text slider-reveal">Ven en familia y disfruta de nuestras delicias</p>
+                  <a href="#" class="btn btn-primary slider-reveal" title="Ver Nuestro Menú">
+                      <span class="text text-1">Nuestro Menú</span>
+                      <span class="text text-2" aria-hidden="true">Nuestro Menú</span>
+                  </a>
+              </li>
+              <li class="slider-item" data-hero-slider-item>
+                  <div class="slider-bg">
+                      <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="cover" class="img-cover" />
+                  </div>
+                  <p class="label-2 section-subtitle slider-reveal">Asombroso y delicioso</p>
+                  <h1 class="display-1 hero-title slider-reveal">Donde cada sabor<br /> cuenta una historia</h1>
+                  <p class="body-2 hero-text slider-reveal">Ven en familia y disfruta de nuestras delicias</p>
+                  <a href="#" class="btn btn-primary slider-reveal" title="Ver Nuestro Menú">
+                      <span class="text text-1">Nuestro Menú</span>
+                      <span class="text text-2" aria-hidden="true">Nuestro Menú</span>
+                  </a>
+              </li>
+          </ul>
+          <button class="slider-btn prev" aria-label="ir al anterior" data-prev-btn>
+              <ion-icon name="chevron-back"></ion-icon>
+          </button>
+          <button class="slider-btn next" aria-label="ir al siguiente" data-next-btn>
+              <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+          <a href="#" class="hero-btn has-after" title="Reservar Mesa">
+              <img src="./assets/images/hero-icon.png" width="48" height="48" alt="icono reservas" />
+              <span class="label-2 text-center span"> Reservar Mesa </span>
+          </a>
+      </section>
+      
+        <!-- <section
           class="section service bg-black-10 text-center"
           aria-label="service"
         >
@@ -382,9 +629,68 @@
               class="shape shape-2 move-anim"
             />
           </div>
-        </section>
+        </section> -->
+        <section class="section service bg-black-10 text-center" aria-label="service">
+          <div class="container">
+              <p class="section-subtitle label-2">Para Paladares Exigentes</p>
+              <h2 class="headline-1 section-title">Ofrecemos Lo Mejor</h2>
+              <p class="section-text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever.
+              </p>
+              <ul class="grid-list">
+                  <li>
+                      <div class="service-card">
+                          <a href="#" class="has-before hover:shine" title="Ver Desayuno">
+                              <figure class="card-banner img-holder" style="--width: 285; --height: 336">
+                                  <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="desayuno" class="img-cover" />
+                              </figure>
+                          </a>
+                          <div class="card-content">
+                              <h3 class="title-4 card-title">
+                                  <a href="#" title="Desayuno">Desayuno</a>
+                              </h3>
+                              <a href="#" class="btn-text hover-underline label-2" title="Ver Menú">Ver Menú</a>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="service-card">
+                          <a href="#" class="has-before hover:shine" title="Ver Entradas">
+                              <figure class="card-banner img-holder" style="--width: 285; --height: 336">
+                                  <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="entradas" class="img-cover" />
+                              </figure>
+                          </a>
+                          <div class="card-content">
+                              <h3 class="title-4 card-title">
+                                  <a href="#" title="Entradas">Entradas</a>
+                              </h3>
+                              <a href="#" class="btn-text hover-underline label-2" title="Ver Menú">Ver Menú</a>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="service-card">
+                          <a href="#" class="has-before hover:shine" title="Ver Bebidas">
+                              <figure class="card-banner img-holder" style="--width: 285; --height: 336">
+                                  <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="bebidas" class="img-cover" />
+                              </figure>
+                          </a>
+                          <div class="card-content">
+                              <h3 class="title-4 card-title">
+                                  <a href="#" title="Bebidas">Bebidas</a>
+                              </h3>
+                              <a href="#" class="btn-text hover-underline label-2" title="Ver Menú">Ver Menú</a>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="forma" class="shape shape-1 move-anim" />
+              <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="forma" class="shape shape-2 move-anim" />
+          </div>
+      </section>
+      
 
-        <section
+        <!-- <section
           class="section about text-center"
           aria-labelledby="about-label"
           id="about"
@@ -425,7 +731,6 @@
             </div>
 
             <figure class="about-banner">
-              <!-- ojo -->
               <img
                 src="./assets/images/about-banner.jpg"
                 width="570"
@@ -469,9 +774,37 @@
               class="shape"
             />
           </div>
-        </section>
+        </section> -->
+        <section class="section about text-center" aria-labelledby="about-label" id="about">
+          <div class="container">
+              <div class="about-content">
+                  <p class="label-2 section-subtitle" id="about-label">Nuestra Historia</p>
+                  <h2 class="headline-1 section-title">Cada Sabor Cuenta una Historia</h2>
+                  <p class="section-text">
+                      Desde su apertura, nuestro restaurante ha sido un faro de excelencia culinaria en el corazón de Cali. Fundado por la renombrada chef Carolina Ruiz, hemos combinado tradición y modernidad para ofrecer una experiencia gastronómica inigualable. Cada plato es una obra maestra, elaborada con ingredientes frescos y técnicas innovadoras. Nuestro compromiso con la calidad y el servicio ha hecho de nosotros un destino preferido para los amantes de la alta cocina. Ven y descubre por qué somos el secreto mejor guardado de la ciudad.
+                  </p>
+                  <div class="contact-label">Reservas</div>
+                  <a href="tel:+804001234567" class="body-1 contact-number hover-underline" title="Llamar para Reservas">+80 (400) 123 4567</a>
+                  <a href="#" class="btn btn-primary" title="Leer Más sobre Nosotros">
+                      <span class="text text-1">Leer Más</span>
+                      <span class="text text-2" aria-hidden="true">Leer Más</span>
+                  </a>
+              </div>
+              <figure class="about-banner">
+                  <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1" />
+                  <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+                      <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="about banner" class="w-100" />
+                  </div>
+                  <div class="abs-img abs-img-2 has-before">
+                      <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="about banner" />
+                  </div>
+              </figure>
+              <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="about banner" class="shape" />
+          </div>
+      </section>
+      
 
-        <section class="special-dish text-center" aria-labelledby="dish-label">
+        <!-- <section class="special-dish text-center" aria-labelledby="dish-label">
           <div class="special-dish-banner">
             <img
               src="./assets/images/special-dish-banner.jpg"
@@ -531,9 +864,35 @@
             alt=""
             class="shape shape-2"
           />
-        </section>
+        </section> -->
+        <section class="special-dish text-center" aria-labelledby="dish-label">
+          <div class="special-dish-banner">
+              <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover" />
+          </div>
+          <div class="special-dish-content bg-black-10">
+              <div class="container">
+                  <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img" />
+                  <p class="section-subtitle label-s">Especialidad</p>
+                  <h2 class="headline-1 section-title">Tortellini de Langosta</h2>
+                  <p class="section-text">
+                      Pequeños anillos de pasta rellenos con una mezcla de carne de langosta, acompañada de ricotta, hierbas frescas y especias. Servido con salsa cremosa de mantequilla y ajo, o salsa de mariscos, que realza el sabor de la langosta y complementa la textura de la pasta.
+                  </p>
+                  <div class="wrapper">
+                      <del class="del body-3">$40.00</del>
+                      <span class="span body1">$20.00</span>
+                  </div>
+                  <a href="#" class="btn btn-primary" title="Ver Menú">
+                      <span class="text text-1">Ver Menú</span>
+                      <span class="text text-2" aria-hidden="true">Ver Menú</span>
+                  </a>
+              </div>
+          </div>
+          <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="decorative shape" class="shape shape-1" />
+          <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="decorative shape" class="shape shape-2" />
+      </section>
+      
 
-        <section class="section menu" aria-label="menu-label" id="menu">
+        <!-- <section class="section menu" aria-label="menu-label" id="menu">
           <div class="container">
             <p class="section-subtitle text-center label-2">
               Selección Especial
@@ -762,9 +1121,125 @@
               class="shape shape-3 move-anim"
             />
           </div>
-        </section>
+        </section> -->
+        <section class="section menu" aria-labelledby="menu-label" id="menu">
+          <div class="container">
+              <p class="section-subtitle text-center label-2">Selección Especial</p>
+              <h2 class="headline-1 section-title text-center">Nuestras Delicias</h2>
+              <ul class="grid-list">
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Ensalada Griega" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Ensalada Griega">Ensalada Griega</a>
+                                  </h3>
+                                  <span class="badge label-1">Estacional</span>
+                                  <span class="span title-2">$25.50</span>
+                              </div>
+                              <p class="card-text label-1">Tomates, pimiento verde, pepino en rodajas, cebolla, aceitunas y queso feta.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasaña" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Lasaña">Lasaña</a>
+                                  </h3>
+                                  <span class="span title-2">$40.00</span>
+                              </div>
+                              <p class="card-text label-1">Verduras, quesos, carnes molidas, salsa de tomate, condimentos y especias.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Calabaza Butternut" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Calabaza Butternut">Calabaza Butternut</a>
+                                  </h3>
+                                  <span class="span title-2">$10.00</span>
+                              </div>
+                              <p class="card-text label-1">Aceite de oliva, sal y pimienta, ajo, cebolla, caldo de pollo, crema de leche, romero.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Tokusen Wagyu">Tokusen Wagyu</a>
+                                  </h3>
+                                  <span class="badge label-1">Nuevo</span>
+                                  <span class="span title-2">$39.00</span>
+                              </div>
+                              <p class="card-text label-1">Verduras, quesos, carnes molidas, salsa de tomate, condimentos y especias.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Olivas Rellenas">Olivas Rellenas</a>
+                                  </h3>
+                                  <span class="span title-2">$25.00</span>
+                              </div>
+                              <p class="card-text label-1">Verduras, quesos, carnes molidas, salsa de tomate, condimentos y especias.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100">
+                              <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Pez Opu" class="img-cover" />
+                          </figure>
+                          <div>
+                              <div class="title-wrapper">
+                                  <h3 class="title-3">
+                                      <a href="#" class="card-title" title="Ver Pez Opu">Pez Opu</a>
+                                  </h3>
+                                  <span class="span title-2">$49.00</span>
+                              </div>
+                              <p class="card-text label-1">Aceite de oliva, ajo, jengibre, cebolla, salsa de soja, limón, cilantro.</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <p class="menu-text text-center">
+                  Durante diciembre diariamente desde <span class="span"> 9:00 am </span> hasta <span class="span"> 9:00 pm </span>
+              </p>
+              <a href="#" class="btn btn-primary" title="Ver Menú">
+                  <span class="text text-1">Ver Menú</span>
+                  <span class="text text-2" aria-hidden="true">Ver Menú</span>
+              </a>
+              <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim" />
+              <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim" />
+          </div>
+      </section>
+      
 
-        <section
+        <!-- <section
           class="section testi text-center has-bg-image"
           style="background-image: url(./assets/images/testimonial-bg.jpg)"
           aria-label="testimonios"
@@ -793,9 +1268,24 @@
               <p class="label-2 profile-name">Sam Jhonson</p>
             </div>
           </div>
-        </section>
-
-        <section class="reservation" id="res">
+        </section> -->
+        <section class="section testi text-center has-bg-image" style="background-image: url(./assets/images/testimonial-bg.jpg)" aria-label="testimonios">
+          <div class="container">
+              <div class="quote">”</div>
+              <p class="headline-2 testi-text">Quería agradecerte por invitarme a esa cena increíble la otra noche. La comida fue extraordinaria.</p>
+              <div class="wrapper">
+                  <div class="separator"></div>
+                  <div class="separator"></div>
+                  <div class="separator"></div>
+              </div>
+              <div class="profile">
+                  <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson" class="img" />
+                  <p class="label-2 profile-name">Sam Jhonson</p>
+              </div>
+          </div>
+      </section>
+      
+        <!-- <section class="reservation" id="res">
           <div class="container">
             <div class="form reservation-form bg-black-10">
               <form action="" class="form-left">
@@ -927,9 +1417,96 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
+        <section class="reservation" id="res">
+          <div class="container">
+              <div class="form reservation-form bg-black-10">
+                  <form action="" class="form-left">
+                      <h2 class="headline-1 text-center">Reserva en Línea</h2>
+                      <p class="form-text text-center">
+                          Solicitud de Reserva
+                          <a href="tel:+88123123456" class="link" title="Llamar para Reservas">+88-123-123456</a>
+                          <br />
+                          o llene el formulario
+                      </p>
+                      <div class="input-wrapper">
+                          <input type="text" name="name" placeholder="Nombre" autocomplete="off" class="input-field" />
+                          <input type="tel" name="phone" placeholder="Teléfono" autocomplete="off" class="input-field" />
+                      </div>
+                      <div class="input-wrapper">
+                          <div class="icon-wrapper">
+                              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                              <select name="person" class="input-field">
+                                  <option value="1-person">1 Persona</option>
+                                  <option value="2-person">2 Personas</option>
+                                  <option value="3-person">3 Personas</option>
+                                  <option value="4-person">4 Personas</option>
+                                  <option value="5-person">5 Personas</option>
+                                  <option value="6-person">6 Personas</option>
+                                  <option value="7-person">7 Personas</option>
+                              </select>
+                              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                          </div>
+                          <div class="icon-wrapper">
+                              <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                              <input type="date" name="reservation-date" class="input-field" />
+                              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                          </div>
+                          <div class="icon-wrapper">
+                              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                              <select name="time" class="input-field">
+                                  <option value="08:00am">08 : 00 am</option>
+                                  <option value="09:00am">09 : 00 am</option>
+                                  <option value="10:00am">10 : 00 am</option>
+                                  <option value="11:00am">11 : 00 am</option>
+                                  <option value="12:00am">12 : 00 am</option>
+                                  <option value="01:00pm">01 : 00 pm</option>
+                                  <option value="02:00pm">02 : 00 pm</option>
+                                  <option value="03:00pm">03 : 00 pm</option>
+                                  <option value="04:00pm">04 : 00 pm</option>
+                                  <option value="05:00pm">05 : 00 pm</option>
+                                  <option value="06:00pm">06 : 00 pm</option>
+                                  <option value="07:00pm">07 : 00 pm</option>
+                                  <option value="08:00pm">08 : 00 pm</option>
+                                  <option value="09:00pm">09 : 00 pm</option>
+                                  <option value="10:00pm">10 : 00 pm</option>
+                              </select>
+                              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                          </div>
+                      </div>
+                      <textarea class="input-field" name="message" placeholder="Mensaje" autocomplete="off"></textarea>
+                      <button type="submit" class="btn btn-secondary">
+                          <span class="text text-1">Reservar Mesa</span>
+                          <span class="text text-2" aria-hidden="true">Reservar Mesa</span>
+                      </button>
+                  </form>
+                  <div class="form-right text-center" style="background-image: url(./assets/images/form-pattern.png)">
+                      <h2 class="headline-1 text-center">Contáctanos</h2>
+                      <p class="contact-label">Reservas</p>
+                      <a href="tel:+88123123456" class="body-1 contact-number hover-underline" title="Llamar para Reservas">+88-123-123456</a>
+                      <div class="separator"></div>
+                      <p class="contact-label">Ubicación</p>
+                      <address class="body-4">
+                          Santiago de Cali - Valle del Cauca <br />
+                          Colombia
+                      </address>
+                      <p class="contact-label">Horario Almuerzo</p>
+                      <p class="body-4">
+                          Lunes a Domingo <br />
+                          11:00am - 2:30pm
+                      </p>
+                      <p class="contact-label">Horario Cena</p>
+                      <p class="body-4">
+                          Lunes a Domingo <br />
+                          05:00pm - 10:00pm
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
 
-        <section
+        <!-- <section
           class="section features text-center"
           aria-label="características"
         >
@@ -1034,9 +1611,56 @@
               class="shape shape-2"
             />
           </div>
-        </section>
+        </section> -->
+        <section class="section features text-center" aria-labelledby="características">
+          <div class="container">
+              <p class="section-subtitle label-2">Por qué elegirnos</p>
+              <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+              <ul class="grid-list">
+                  <li class="feature-item">
+                      <div class="feature-card">
+                          <div class="card-icon">
+                              <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icono de alimentos saludables" />
+                          </div>
+                          <h3 class="title-2 card-title">Alimentos Saludables</h3>
+                          <p class="label-1 card-text">Seleccionamos ingredientes frescos y de la más alta calidad para garantizar que cada plato sea una experiencia culinaria excepcional.</p>
+                      </div>
+                  </li>
+                  <li class="feature-item">
+                      <div class="feature-card">
+                          <div class="card-icon">
+                              <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icono de ambiente sofisticado" />
+                          </div>
+                          <h3 class="title-2 card-title">Ambiente Sofisticado</h3>
+                          <p class="label-1 card-text">Cuidadosamente diseñado para proporcionar una experiencia elegante y acogedora, donde cada detalle ha sido pensado para tu máximo confort y disfrute.</p>
+                      </div>
+                  </li>
+                  <li class="feature-item">
+                      <div class="feature-card">
+                          <div class="card-icon">
+                              <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icono de chefs expertos" />
+                          </div>
+                          <h3 class="title-2 card-title">Chefs Expertos</h3>
+                          <p class="label-1 card-text">Seleccionados por su habilidad y experiencia, garantizando que cada plato sea una obra maestra culinaria.</p>
+                      </div>
+                  </li>
+                  <li class="feature-item">
+                      <div class="feature-card">
+                          <div class="card-icon">
+                              <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icono de eventos y fiestas" />
+                          </div>
+                          <h3 class="title-2 card-title">Eventos & Fiestas</h3>
+                          <p class="label-1 card-text">Es el lugar perfecto, ofrecemos un ambiente elegante y un servicio excepcional que hará que tu celebración sea inolvidable.</p>
+                      </div>
+                  </li>
+              </ul>
+              <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="forma decorativa" class="shape shape-1" />
+              <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="forma decorativa" class="shape shape-2" />
+          </div>
+      </section>
+      
 
-        <section class="section event bg-black-10" aria-label="evento" id="eve">
+        <!-- <section class="section event bg-black-10" aria-label="evento" id="eve">
           <div class="container">
             <p class="section-subtitle label-2 text-center">
               Actualizaciones Recientes
@@ -1139,11 +1763,61 @@
               <span class="text text-2" aria-hidden="true">Nuestro Blog</span>
             </a>
           </div>
-        </section>
+        </section> -->
+        <section class="section event bg-black-10" aria-labelledby="evento" id="eve">
+          <div class="container">
+              <p class="section-subtitle label-2 text-center">Actualizaciones Recientes</p>
+              <h2 class="section-title headline-1 text-center">Próximos Eventos</h2>
+              <ul class="grid-list">
+                  <li>
+                      <div class="event-card has-before hover:shine">
+                          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+                              <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy" alt="Sabor tan irresistible que querrás devorarlo con la mirada." class="img-cover" />
+                              <time datetime="2024-11-28" class="publish-date label-2">28/11/2024</time>
+                          </div>
+                          <div class="card-content">
+                              <p class="card-subtitle label-2 text-center">Sabor Mexicano</p>
+                              <h3 class="card-title title-2 text-center">Sabor tan irresistible que querrás devorarlo con la mirada.</h3>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="event-card has-before hover:shine">
+                          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+                              <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy" alt="Cena Navideña" class="img-cover" />
+                              <time datetime="2024-12-24" class="publish-date label-2">24/12/2024</time>
+                          </div>
+                          <div class="card-content">
+                              <p class="card-subtitle label-2 text-center">Expectacular Banquete</p>
+                              <h3 class="card-title title-2 text-center">Cena Navideña.</h3>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="event-card has-before hover:shine">
+                          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+                              <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy" alt="Cena Fin de año" class="img-cover" />
+                              <time datetime="2024-12-31" class="publish-date label-2">31/12/2024</time>
+                          </div>
+                          <div class="card-content">
+                              <p class="card-subtitle label-2 text-center">Lo mejor para despedir el año</p>
+                              <h3 class="card-title title-2 text-center">Cena Fin de Año.</h3>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <a href="#" class="btn btn-primary" title="Visitar Nuestro Blog">
+                  <span class="text text-1">Nuestro Blog</span>
+                  <span class="text text-2" aria-hidden="true">Nuestro Blog</span>
+              </a>
+          </div>
+      </section>
+      
+      
       </article>
     </main>
 
-    <footer
+    <!-- <footer
       class="footer section has-bg-image text-center"
       style="background-image: url(./assets/images/footer-bg.jpg)"
     >
@@ -1257,19 +1931,75 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <footer class="footer section has-bg-image text-center" style="background-image: url(./assets/images/footer-bg.jpg)" aria-labelledby="contact">
+      <div class="container" id="contact">
+          <div class="footer-top grid-list">
+              <div class="footer-brand has-before has-after">
+                  <a href="#" class="logo">
+                      <img src="./assets/images/logo1.png" width="160" height="50" loading="lazy" alt="gulagula inicio" />
+                  </a>
+                  <address class="body-4">Santiago de Cali, Valle, Colombia</address>
+                  <a href="mailto:reservas@gulagula.com" class="body-4 contact-link" title="Enviar correo a GulaGula">reservas@gulagula.com</a>
+                  <a href="tel:+88123123456" class="body-4 contact-link" title="Llamar para Reservas">Reservas: +88-123-123456</a>
+                  <p class="body-4">Abierto : 09:00 am - 11:00 pm</p>
+                  <div class="wrapper">
+                      <div class="separator"></div>
+                      <div class="separator"></div>
+                      <div class="separator"></div>
+                  </div>
+                  <p class="title-1">Noticias & Promociones</p>
+                  <p class="label-1">Suscríbete y obtén <span class="span">25% Descuento</span></p>
+                  <form action="" class="input-wrapper">
+                      <div class="icon-wrapper">
+                          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                          <input type="email" name="email_address" placeholder="Email" autocomplete="off" class="input-field" />
+                      </div>
+                      <button type="submit" class="btn btn-secondary">
+                          <span class="text text-1">Suscribirse</span>
+                          <span class="text text-2" aria-hidden="true">Suscribirse</span>
+                      </button>
+                  </form>
+              </div>
+              <ul class="footer-list">
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Inicio">Inicio</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Menú">Menú</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Nosotros">Nosotros</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Chefs">Chefs</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Contacto">Contacto</a></li>
+              </ul>
+              <ul class="footer-list">
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Facebook">Facebook</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Instagram">Instagram</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Twitter">Twitter</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Youtube">Youtube</a></li>
+                  <li><a href="#" class="label-2 footer-link hover-underline" title="Google Map">Google Map</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p class="copyright">
+                  &copy; 2024 GulaGula. All Rights Reserved
+                  <a href="https://antsoftdesign.vercel.app/" target="_blank" class="link" title="ANT Soft Design">Made with ❤️ by ANT</a>
+              </p>
+          </div>
+      </div>
+  </footer>
+  
 
-    <a
+    <!-- <a
       href="#top"
       class="back-top-btn active"
       aria-label="ir a inicio"
       data-back-top-btn
     >
       <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
-
+    </a> -->
+    <a href="#top" class="back-top-btn active" aria-label="ir a inicio" data-back-top-btn title="Ir a Inicio">
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+  
     <!-- ***************************************************************** -->
-    <script src="./assets/js/script.js"></script>
+    <!--    <script src="./assets/js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -1277,6 +2007,18 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script> -->
+
+    <script src="./assets/js/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      async
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
     ></script>
   </body>
 </html>

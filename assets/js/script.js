@@ -1,36 +1,38 @@
-"use strict";
-
+/* "use strict";
 const preloader = document.querySelector("[data-preload]");
-
 window.addEventListener("load", function () {
   preloader.classList.add("loaded");
   document.body.classList.add("loaded");
+}); */
+
+"use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.querySelector("[data-preload]");
+  if (preloader) {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
+  } else {
+    console.error("Preloader element not found");
+  }
 });
+
 
 /* const addEventOnElements = (elements, eventType, callback) => {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
 };
-
-
-
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
-
 const navLinks = document.querySelectorAll(".navbar-link");
-
-
-
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 };
-
 addEventOnElements(navTogglers, "click", toggleNavbar);
-
 addEventOnElements(navLinks, "click", toggleNavbar); */
 
 const addEventOnElements = (elements, eventType, callback) => {
@@ -50,7 +52,9 @@ const toggleNavbar = () => {
 
 addEventOnElements([...navTogglers, ...navLinks], "click", toggleNavbar);
 
-const header = document.querySelector("[data-header]");
+
+
+/* const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 let lastScrollPos = 0;
@@ -134,7 +138,95 @@ addEventOnElements(
   autoSlide
 );
 
-window.addEventListener("load", autoSlide);
+window.addEventListener("load", autoSlide); */
+
+"use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("[data-header]");
+  const backTopBtn = document.querySelector("[data-back-top-btn]");
+  const heroSlider = document.querySelector("[data-hero-slider]");
+  const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
+  const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
+  const heroSliderNextBtn = document.querySelector("[data-next-btn]");
+
+  if (!header || !backTopBtn || !heroSlider || !heroSliderItems.length || !heroSliderPrevBtn || !heroSliderNextBtn) {
+    console.error("One or more elements not found");
+    return;
+  }
+
+  let lastScrollPos = 0;
+
+  const hideHeader = function () {
+    const isScrollBottom = lastScrollPos < window.scrollY;
+    if (isScrollBottom) {
+      header.classList.add("hide");
+    } else {
+      header.classList.remove("hide");
+    }
+    lastScrollPos = window.scrollY;
+  };
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 50) {
+      header.classList.add("active");
+      backTopBtn.classList.add("active");
+      hideHeader();
+    } else {
+      header.classList.remove("active");
+      backTopBtn.classList.remove("active");
+    }
+  });
+
+  let currentSlidePos = 0;
+  let lastActiveSliderItem = heroSliderItems[0];
+
+  const updateSlidersPos = function () {
+    lastActiveSliderItem.classList.remove("active");
+    heroSliderItems[currentSlidePos].classList.add("active");
+    lastActiveSliderItem = heroSliderItems[currentSlidePos];
+  };
+
+  const slideNext = function () {
+    if (currentSlidePos >= heroSliderItems.length - 1) {
+      currentSlidePos = 0;
+    } else {
+      currentSlidePos++;
+    }
+    updateSlidersPos();
+  };
+
+  const slidePrev = function () {
+    if (currentSlidePos <= 0) {
+      currentSlidePos = heroSliderItems.length - 1;
+    } else {
+      currentSlidePos--;
+    }
+    updateSlidersPos();
+  };
+
+  heroSliderNextBtn.addEventListener("click", slideNext);
+  heroSliderPrevBtn.addEventListener("click", slidePrev);
+
+  let autoSlideInterval;
+
+  const autoSlide = function () {
+    autoSlideInterval = setInterval(slideNext, 7000);
+  };
+
+  const addEventOnElements = function (elements, event, handler) {
+    elements.forEach(element => element.addEventListener(event, handler));
+  };
+
+  addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
+    clearInterval(autoSlideInterval);
+  });
+
+  addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
+
+  autoSlide();
+});
+
 
 /* const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
